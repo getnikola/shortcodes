@@ -1,17 +1,30 @@
 # Shortcodes for Nikola
 
-Community-maintained shortcodes for Nikola are stored in this file. To **add your own**, send a pull request.
+Community-maintained [shortcodes] for Nikola are listed in this file. To **add
+your own**, put it in a repository or a [Gist], add a link and description for
+your shortcode to this file and send a pull request. Please use the existing
+entries as a guideline for formatting your new entry. The [Extending Nikola]
+manual describes how to implement shortcodes.
 
-To **use a template-based shortcode**: save it to the `shortcodes/` directory of your Nikola site and follow the usage instructions.
+To **use a template-based shortcode**: save it to the `shortcodes/` directory
+of your Nikola site and follow the usage instructions given by shortcode's
+author.
+
+[shortcodes]: https://getnikola.com/handbook.html#shortcodes
+[gist]: https://gist.github.com/
+[extending nikola]: https://getnikola.com/extending.html#shortcodes
+
 
 ## audio
 
-**Author:** [Christopher Arndt (SpotlightKid)](https://github.com/SpotlightKid)  
-[**Download audio.tmpl**](https://gist.github.com/SpotlightKid/70f3ccdfacd9cfb091941a91f349924f)
+**Author:** [Christopher Arndt (SpotlightKid)](https://github.com/SpotlightKid)
 
-A Jinja2 template-based shortcode for Nikola to embed a HTML5 audio player and download links.
+**Download:** [audio.tmpl](https://gist.github.com/SpotlightKid/70f3ccdfacd9cfb091941a91f349924f)
 
-Usage:
+A Jinja2 template-based shortcode for Nikola to embed a HTML5 audio player and
+download links.
+
+### Usage:
 
     {{% audio src=http://example.com/my-track.mp3 %}}
 
@@ -29,4 +42,5 @@ And:
 
     {{% audio src=http://example.com/my-track.mp3 nodownload=1 %}}
 
-Boolean parameters must have a value to take effect, but it doesn't matter what the value is.
+Boolean parameters must have a value to take effect, but it doesn't matter what
+the value is.
