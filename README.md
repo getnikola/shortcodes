@@ -14,6 +14,12 @@ author.
 [gist]: https://gist.github.com/
 [extending nikola]: https://getnikola.com/extending.html#shortcodes
 
+## slides
+
+**Author:** [Roberto Alsina (ralsina)](https://github.com/ralsina)
+**Gist:** https://gist.github.com/ralsina/e02a7bd0e27255dfac522ca16de78fb3
+
+Create a carousel containing the images from a gallery. Meant to be used in bootstrap4-based themes.
 
 ## audio
 
