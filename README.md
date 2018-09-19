@@ -50,3 +50,26 @@ And:
 
 Boolean parameters must have a value to take effect, but it doesn't matter what
 the value is.
+
+## mastodon
+
+**Author:** [Anke K (encarsia)](https://github.com/encarsia)
+
+**Gist:**
+  * Jinja2 template: [mastodon.tmpl](https://gist.github.com/encarsia/52728167ac7d2fe79caf480c291931ea)
+  * Mako template: [mastodon.tmpl](https://gist.github.com/encarsia/da438431ca42781045b4d63ac1b9ea5c)
+
+Template-based shortcode to embed Mastodon posts.
+
+### Usage:
+```
+{{% mastodon status=https://instance.domain/@user/tootnr %}}
+```
+Optional parameters:
+ - ``width`` (default: 600)
+ - ``height`` (default: 333)
+    
+Example:
+```
+{{% mastodon status=https://instance.domain/@user/tootnr % width=300 height=600}} will show a 300x600 frame instead of the default 600x300
+```
