@@ -73,3 +73,66 @@ Example:
 ```
 {{% mastodon status=https://instance.domain/@user/tootnr % width=300 height=600}} will show a 300x600 frame instead of the default 600x300
 ```
+
+## series-button
+
+**Author:** [Diego Carrasco G. (dacog)](https://github.com/dacog)
+
+**Download**: [series_buttons.tmpl](https://github.com/dacog/nikola-shortcodes/blob/main/series_buttons.tmpl)
+
+Template engine: Jinja2
+
+Template-based shortcode to add buttons to other articles. It has, in my opinio, sensible defautls. I use it for previous/next buttons for an article series.
+
+### Usage
+
+```jinja2
+{{% series_buttons previous_url="/previous-article" previous_text="Previous Article Title" next_url="/next-article" next_text="Next Article Title" %}}
+```
+**Important**
+
+- If there is no previous_url, it does not render the previous button.
+- If there is no next_url, it does not render the next button.
+- If there is no previous_text, it defaults to "Previous in series".
+- If there is no next_text, it defaults to "Next in series".
+
+You can use CSS to customize the look-and-feel. The buttons have an id `#series-buttons`
+
+## infobox
+
+**Author:** [Diego Carrasco G. (dacog)](https://github.com/dacog)
+
+**Download**: [infobox.tmpl](https://github.com/dacog/nikola-shortcodes/blob/main/infobox.tmpl)
+
+Template engine: Jinja2
+
+Template-based shortcode used to display an infobox with a specific type of content. 
+There is also an _optional_ `disclaimer` shortcode to add a disclaimer to an infobox by adding a font-awesome info icon at the end of the infobox. Defaults to no disclaimer.
+
+### Usage
+
+```
+{{% infobox type="book" text="This is a book infobox"  disclaimer="true" %}}
+```
+
+It supports the following font-awesome icons:
+
+- book
+- video
+- audio
+- link
+- quote
+- image
+- sticky-note
+
+## disclaimer
+
+**Author:** [Diego Carrasco G. (dacog)](https://github.com/dacog)
+
+**Download**: [disclaimer.tmpl](https://github.com/dacog/nikola-shortcodes/blob/main/disclaimer.tmpl)
+
+A really small shortcode to add a disclaimer somewhere on the page.
+
+### Usage
+
+`{{% disclaimer %}}`
